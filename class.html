@@ -1,0 +1,27 @@
+<script>
+  class students {
+    constructor(name, age, cls) {
+      this.myname = name;
+      this.age = age;
+      this.cls = cls;
+    }
+    // instance method
+    biodata() {
+      return `hi  ${this.myname} i am ${this.age} years old & in class ${this.cls} `;
+    }
+  }
+  class player extends students {
+    constructor(name, age, cls, mygame) {
+      super(name, age, cls);
+      this.mygame = mygame;
+    }
+    play_biodata() {
+      return ` ${super.biodata()} . i am player of ${this.mygame}  `;
+    }
+  }
+
+  let obj1 = new player("sant", 30, 10, "footbal");
+  let obj2 = new player("satyam", 25, 11, "cricket");
+  console.log(obj1.play_biodata());
+  console.log(obj2.biodata());
+</script>
