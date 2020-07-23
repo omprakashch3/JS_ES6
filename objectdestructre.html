@@ -1,0 +1,16 @@
+<script>
+  let person = {
+    name: "omprakash",
+    age: 25,
+    gender: "male",
+    hob: {
+      first: "politics",
+      sec: "game",
+    },
+  };
+  // console.log(`my name is ${person.name}`);
+  let { name, age, gender: sex, hob } = person;
+  console.log(
+    `my name is ${name},my age is ${age}, and gender is ${sex} and i love ${hob.first}`
+  );
+</script>

@@ -1,0 +1,29 @@
+<script>
+  //ES5
+
+  //   function sum(a, b) {
+  //     console.log(a + b);
+  //   }
+  //   sum(1, 2, 3, 4, 5); //3
+
+  //ES6 rest parameter
+
+  //   function sum(...inputs) {
+  //     console.log(inputs);
+  //     let total = 0;
+  //     for (let i of inputs) {
+  //       total += i;
+  //     }
+  //     console.log(total);
+  //   }
+  //   sum(1, 2, 4, 4, 5); //3
+
+  function fun(a, b, ...c) {
+    console.log(`${a} and ${b}`);
+    console.log(c);
+    console.log(c[0]);
+    console.log(c.length);
+    console.log(c.indexOf("om"));
+  }
+  fun("sant", "satyam", "sonu", "om", "saroj");
+</script>
