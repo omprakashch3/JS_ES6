@@ -1,0 +1,22 @@
+<script>
+  //multiplication of 2 nos
+  //   function mul(a, b) {
+  //     console.log(a * b);
+  //   }
+  //   mul(4); //Nan
+  //   function mul(a, b) {
+  //     b = typeof b !== "undefined" ? b : 2;
+  //     console.log(a * b);
+  //   }
+  //   mul(4); //8
+
+  //now in ES6
+  //   function mul(a, b = 3) {
+  //     console.log(a * b);
+  //   }
+  //   mul(4); //12
+  let mul = (a, b = 3) => {
+    console.log(`the multiplication is ${a * b}`);
+  };
+  mul(5);
+</script>
